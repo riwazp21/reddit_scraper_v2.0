@@ -38,12 +38,13 @@ This project scraps all the user comments from a reddit post and stores in it a 
    2. First, you need to run the python file that will scrape all the html content in the URL. Make sure that your reddit link has the old attribute in it.
       ```python content_scraper.py URL```
    4. For example,
+      
       ```python content_scraper.py https://www.old.reddit.com/r/funny/comments/16brnzb/self_aware/```
-   5. After running this line of code, you will have a new file called content.txt in your directory, which has all the html content of the given link
-   6. This will take few minutes, depending on how big the reddit post is.
-   7. Then run the following command in your terminal to scrape all the comments from the html dump file
+   6. After running this line of code, you will have a new file called content.txt in your directory, which has all the html content of the given link
+   7. This will take few minutes, depending on how big the reddit post is.
+   8. Then run the following command in your terminal to scrape all the comments from the html dump file
       ```python comment_scraper.py content.txt```
-   8. After running this line of code, you will have a new file called comment.txt in your directory, which has all the comments from the html dump file
-   9. You can run this command to print out the contents inside the file comment.txt
+   9. After running this line of code, you will have a new file called comment.txt in your directory, which has all the comments from the html dump file
+   10. You can run this command to print out the contents inside the file comment.txt
        ```cat comment.txt```
       
