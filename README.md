@@ -42,7 +42,7 @@ This project scraps all the user comments from a reddit post and stores in it a 
       ```python run.py URL```
    4. For example,
       
-      ```python content_scraper.py https://www.old.reddit.com/r/funny/comments/16brnzb/self_aware/```
+      ```python run.py https://www.old.reddit.com/r/funny/comments/16brnzb/self_aware/```
    6. After running this line of code, you will have a new file called content.txt inside the Data/raw directory, which has all the html content of the given link. And another file called comment.txt inside the Data/processed directory
    
       
