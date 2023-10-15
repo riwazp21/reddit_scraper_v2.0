@@ -1,5 +1,5 @@
-# Project - 2 CS 325 Riwaz Poudel
-## Python Program to scrape comments from a reddit post
+# Project - 3 CS 325 Riwaz Poudel
+## Python Program to scrape comments from a reddit post using modules
 ### Description
 This project scraps all the user comments from a reddit post and stores in it a file.
 ### How to make this program run in your device?
@@ -9,14 +9,15 @@ This project scraps all the user comments from a reddit post and stores in it a 
    ```conda activate```
 #### Cloning the Project in your device
 1. In this github repository, click the green button that says Code.
-2. You can see a HTTPS link, copy that to your clipboard.
-3. In your terminal, go to your desired folder, where you want to clone this repository
-4. Type the following line of code to your terminal
+2. Make sure you are in the modular branch
+3. You can see a HTTPS link, copy that to your clipboard.
+4. In your terminal, go to your desired folder, where you want to clone this repository
+5. Type the following line of code to your terminal
    ```git clone "Paste the HTTPS link you copied earlier, don't include the quotation"```
-5. After this command, a local file in your device exists
+6. After this command, a local file in your device exists
 #### Setting up the conda environment
-1. In your terminal change your directory to go inside the reddit_scraper_v2.0 project file
-2. The project file(reddit_scrapper_v2.0) has seven files
+1. In your terminal change your directory to go inside the reddit_scraper_v2.0 project file. 
+2. The project file(reddit_scrapper_v2.0) has the following files
    ```
    README.md (README document)
    requirement.yaml (yaml file)
@@ -25,6 +26,7 @@ This project scraps all the user comments from a reddit post and stores in it a 
    content.txt(sample html dump file after running content_scraper.py)
    comments.txt (sample dump file after running comment_scraper.py)
    README.md(this file)
+   CS325_p3 folder(This is the main project file)
    
    ```
 3. The requirement.yaml file has all the necessary packages for this code to work
@@ -35,16 +37,12 @@ This project scraps all the user comments from a reddit post and stores in it a 
 #### Running the program
    
    1. Make sure you have your environment working before you run your python script.
-   2. First, you need to run the python file that will scrape all the html content in the URL. Make sure that your reddit link has the old attribute in it.
-      ```python content_scraper.py URL```
+   2. Go to CS325_p3 director
+   3. Run the following command to run the project
+      ```python run.py URL```
    4. For example,
       
       ```python content_scraper.py https://www.old.reddit.com/r/funny/comments/16brnzb/self_aware/```
-   6. After running this line of code, you will have a new file called content.txt in your directory, which has all the html content of the given link
-   7. This will take few minutes, depending on how big the reddit post is.
-   8. Then run the following command in your terminal to scrape all the comments from the html dump file
-      ```python comment_scraper.py content.txt```
-   9. After running this line of code, you will have a new file called comment.txt in your directory, which has all the comments from the html dump file
-   10. You can run this command to print out the contents inside the file comment.txt
-       ```cat comment.txt```
+   6. After running this line of code, you will have a new file called content.txt inside the Data/raw directory, which has all the html content of the given link. And another file called comment.txt inside the Data/processed directory
+   
       
